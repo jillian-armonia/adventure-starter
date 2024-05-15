@@ -44,8 +44,11 @@ class Room {
     }
 
     getItemByName(name) {
-
-        // Fill this in
+        for (const item of this.items){
+            if (name === item.name){
+                return item;
+            }
+        }
     }
 
 }
